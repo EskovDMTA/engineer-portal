@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  developer: MyString
+  facing_area: 1
+  material: MyString
+
+two:
+  title: MyString
+  developer: MyString
+  facing_area: 1
+  material: MyString

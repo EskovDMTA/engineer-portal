@@ -1,0 +1,37 @@
+<%= form_with model: @building do |f| %>
+	<div class="mb-3">
+		<%= f.label :title, "Название ЖК", class: "form-label" %>
+		<%= f.text_field :title, class: "form-control" %>
+	</div>
+
+	<div class="mb-3">
+		<%= f.label :developer, "Застройщик", class: "form-label" %>
+		<%= f.text_field :developer, class: "form-control" %>
+	</div>
+
+	<div class="mb-3">
+		<%= f.label :facing_area, "Площадь фасада", class: "form-label" %>
+		<%= f.text_field :facing_area, class: "form-control" %>
+	</div>
+
+	<div class="mb-3">
+		<%= f.label :material, "Материал облицовки", class: "form-label" %>
+		<%= f.text_field :material, class: "form-control" %>
+	</div>
+
+
+	
+
+	<div class="input-group">
+		<div class="mb-3">
+			<%= f.label :main_photo, "Добавить главное фото", class: "form-label" %>
+			<%= f.file_field :main_photo, class: "form-control"%>
+		</div>
+	</div>
+
+	<div class="mb-3">
+		<%= f.submit "Добавить объект" %>
+	</div>
+
+
+<% end %>
