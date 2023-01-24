@@ -73,3 +73,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+
+gem 'image_processing', '~> 1.2'

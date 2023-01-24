@@ -1,7 +1,7 @@
 <h1> From partial </h1>
 	<%= @buildings.each do |building| %>
 		<div class="card mb-3">
-  			<%= image_tag building.main_photo, class: "card-img-top"%>
+  			<%= image_tag building.main_photo, width: "600px" if building.main_photo.attached?  %>
   			<div class="card-body">
     			<h5 class="card-title"><%= building.title %></h5>
     			<p class="card-text"><%= building.developer %>, <%= building.material%></p>
