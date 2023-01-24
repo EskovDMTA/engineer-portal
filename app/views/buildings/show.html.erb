@@ -1,0 +1,12 @@
+<div class="card mb-3">
+	<h5 class="card-title"><%= @building.title %></h5>
+  	<%= image_tag @building.main_photo, width: "900px" if @building.main_photo.attached?  %>
+  		<div class="card-body">
+    		<button class="card-text">Заявка на материал</button>
+    		<button class="card-text">Добавить фото</button>
+
+    		<p class="card-text"><%= link_to "Фотографии объекта"%></p>
+    		<p class="card-text"><%= link_to "Чертежи и прочие материалы"%></p>
+    		<p class="card-text"><small class="text-muted"><%= @building.updated_at %></small></p>
+  		</div>
+</div>
